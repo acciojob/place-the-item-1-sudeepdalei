@@ -1,2 +1,28 @@
+.holder {
+  display: flex;
+  /* Distributes items to the edges; 
+     wraps them to a new row when the screen is full */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+  width: 100%;
+}
 
-/* Your CSS Code here. */
+.item {
+  /* Prevents items from shrinking (squashing) */
+  flex-shrink: 0;
+  
+  /* Dimensions based on the square look in your image */
+  width: 150px;
+  height: 150px;
+  
+  /* Visual styling */
+  font-size: 4rem;
+  color: black;
+  margin-bottom: 5px; /* Adds a small gap between rows */
+}
+
+/* Colors from your image */
+.green { background-color: green; }
+.red { background-color: red; }
+.blue { background-color: blue; }
